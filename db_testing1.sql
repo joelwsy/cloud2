@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2024 at 06:27 PM
+-- Generation Time: May 15, 2024 at 02:35 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -76,7 +76,7 @@ INSERT INTO `products` (`id`, `product_code`, `product_name`, `product_desc`, `p
 (7, 'TAR7', 'Plaque', 'Customise your own plaque', '7.png', 123, 29.00),
 (8, 'TAR8', 'TinkerBell Sunflower', 'Mini bouquet', '8.png', 12, 122.00),
 (9, 'TAR9', 'Fairywell Sunflower', 'Sunflower bouquet', '9.png', 20, 120.00),
-(10, 'TAR10', 'Bouquets Cheyenne', 'Cheyennes bouquet set', '10.png', 11, 119.00);
+(10, 'TAR10', 'Bouquets Cheyenne', 'Cheyenne\'s bouquet set', '10.png', 11, 119.00);
 
 -- --------------------------------------------------------
 
@@ -102,7 +102,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `address`, `city`, `pin`, `email`, `password`, `type`) VALUES
 (1, 'Steve', 'Jobs', 'Infinite Loop', 'California', 95014, 'sjobs@apple.com', 'steve', 'admin'),
-(3, 'Joel', 'W', '16, Tingkat ', 'Georgetown', 123123, 'joelwsy-pm22@student.tarc.edu.my', '123123', 'user');
+(3, 'Joel', 'W', '16, Tingkat ', 'Georgetown', 123123, 'joelwsy-pm22@student.tarc.edu.my', '123123', 'user'),
+(4, 'Gan', 'Zheng Lean', '77', 'Georgetown', 10470, 'ganzl-pm22@student.tarc.edu.my', '456456', 'user');
 
 --
 -- Indexes for dumped tables
@@ -148,7 +149,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
